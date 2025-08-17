@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class countCharacter {
     public static void main(String[] args) {
-        String st="aman Kush @*()*@ 159654 singh";
 
         Scanner sc=new Scanner(System.in);
         System.out.println("Please enter a string");
@@ -26,9 +25,7 @@ public class countCharacter {
                 symbol++;
             }
         }
-        System.out.println("The no. of letters is : "+letter);
-        System.out.println("The no. of digit is : "+digit);
-        System.out.println("The no. of symbols is : "+symbol);
+          
 
         //it defines that the string only contain the digit.
         if(arr.length==digit){

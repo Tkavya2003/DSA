@@ -1,8 +1,14 @@
 package DSA.String;
 
+import java.util.Scanner;
+
 public class countCharacter {
     public static void main(String[] args) {
         String st="aman Kush @*()*@ 159654 singh";
+
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Please enter a string");
+        String st=sc.nextLine();
 
         //converting the string into an array.
         char[] arr=st.toCharArray();
@@ -23,5 +29,18 @@ public class countCharacter {
         System.out.println("The no. of letters is : "+letter);
         System.out.println("The no. of digit is : "+digit);
         System.out.println("The no. of symbols is : "+symbol);
+
+        //it defines that the string only contain the digit.
+        if(arr.length==digit){
+            System.out.println("The String only contains digit");
+
+            //it defines that the string only contain the alphabet.
+        } else if (arr.length==letter) {
+            System.out.println("The string only contain letters");
+        }else {
+            System.out.println("The no. of letters is : " + letter);
+            System.out.println("The no. of digit is : " + digit);
+            System.out.println("The no. of symbols is : " + symbol);
+        }
     }
 }
